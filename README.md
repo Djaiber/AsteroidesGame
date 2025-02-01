@@ -1,21 +1,21 @@
-# AsteroidesGame
+#  🚀 AsteroidesGame ☄️ 
 A classic Asteroids game clone built with vanilla JavaScript.
 
 ## Description
 This is a recreation of the iconic Asteroids arcade game where players control a spaceship and destroy asteroids while avoiding collisions.
 
-## Controls
+## Controls 🕹️
 ### Option 1: WASD
 - **W** - Thrust forward
 - **A** - Rotate left
-- **S** - Brake/Reverse
+- **S** - Brake
 - **D** - Rotate right
 - **Space** - Shoot
 
 ### Option 2: Arrow Keys
 - **↑** (Up Arrow) - Thrust forward
 - **←** (Left Arrow) - Rotate left
-- **↓** (Down Arrow) - Brake/Reverse
+- **↓** (Down Arrow) - Brake
 - **→** (Right Arrow) - Rotate right
 - **Space** - Shoot
 
@@ -27,7 +27,7 @@ This is a recreation of the iconic Asteroids arcade game where players control a
 - Simple collision detection
 - Dual control schemes (WASD or Arrow keys)
 
-## Technologies Used
+## Technologies Used 
 - HTML5
 - Vanilla JavaScript
 - CSS
