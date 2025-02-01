@@ -298,27 +298,47 @@ for (let i = 0; i < 5; i++) {
 // Eventos de teclado
 document.addEventListener('keydown', (event) => {
     if (juegoTerminado) {
-        if (event.key === ' ') {
+        if (event.code === 'Space') {
             location.reload();
         }
+        return;
     }
 
-    switch(event.key) {
+    switch(event.code) {
         case 'ArrowUp':
+        case 'KeyW':
             nave.acelerando = true;
             break;
         case 'ArrowLeft':
+        case 'KeyA':
             nave.rotandoIzquierda = true;          
             break;
         case 'ArrowRight':
+        case 'KeyD':
             nave.rotandoDerecha = true;
             break;
-        case ' ':
+        case 'Space':
             nave.disparar();
             break;
     }
 });
 
+document.addEventListener('keyup', (event) => {
+    switch(event.code) {
+        case 'ArrowUp':
+        case 'KeyW':
+            nave.acelerando = false;
+            break;
+        case 'ArrowLeft':
+        case 'KeyA':
+            nave.rotandoIzquierda = false;          
+            break;
+        case 'ArrowRight':
+        case 'KeyD':
+            nave.rotandoDerecha = false;
+            break;
+    }
+});
 
 // Función para dibujar la puntuación
 function dibujarPuntuacion() {
